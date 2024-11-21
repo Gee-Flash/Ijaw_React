@@ -242,6 +242,7 @@ body, html {
 
 /* Countdown Section Styling */
 #countdown-section {
+  position: relative;
   padding: 50px 0;
   text-align: center;
 }
@@ -293,15 +294,19 @@ body, html {
 
 /* Bottom White image */
 #countdown-section .bottom-white {
+  position: relative;
+  bottom: 0;
   margin-top: 50px;
   background-color: #f4f4f4;
   /* border: 1px solid red; */
 }
-#important-info-section .top-border img {
+
+#countdown-section .bottom-white img {
   width: 100%;
   height: auto;
   display: block;
 }
+
 
 /* Section: Important things to note */
 #important-info-section {
@@ -351,12 +356,13 @@ body, html {
 }
 
 /* Styling for icons */
-.info-box i {
+.info-box .fa-dollar-sign,
+.info-box .fa-trophy {
   font-size: 3rem;
   color: #d40000;
   margin-bottom: 15px;
-
 }
+
 
 .info-box p {
   font-size: 1rem;

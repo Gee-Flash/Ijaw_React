@@ -3,6 +3,8 @@ import Home from '@/components/header'
 import Countdown from "@/components/countdown";
 import Note from "@/components/note";
 import Map from "@/components/map";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 
 const OnePage = () => {
   return (
@@ -16,6 +18,8 @@ const OnePage = () => {
       <Countdown />
       <Note />
       <Map />
+      <Contact />
+      <Footer />
     </div>
   )
 }

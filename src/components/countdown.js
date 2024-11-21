@@ -4,24 +4,24 @@ const Countdown = () => {
     // Set the date for the audition countdown (replace with your event date)
     const auditionDate = new Date("2024-11-30T00:00:00").getTime();
 
-    // Update the countdown every 1 second
-    const countdown = setInterval(function () {
+// Update the countdown every 1 second
+    const countdown = setInterval(function() {
         const now = new Date().getTime();
         const timeLeft = auditionDate - now;
 
-        // Calculate days, hours, minutes, and seconds
+ // Calculate days, hours, minutes, and seconds
         const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-        // Display the result
+// Display the result
         document.getElementById("days").innerHTML = days;
         document.getElementById("hours").innerHTML = hours;
         document.getElementById("minutes").innerHTML = minutes;
         document.getElementById("seconds").innerHTML = seconds;
 
-        // If the countdown is over, display "Event Started!"
+// If the countdown is over, display "Event Started!"
         if (timeLeft < 0) {
             clearInterval(countdown);
             document.getElementById("days").innerHTML = 0;
@@ -61,7 +61,6 @@ const Countdown = () => {
                         <p>Seconds</p>
                     </div>
                 </div>
-                {/* Top border image */}
                 <div className="bottom-white">
                     <Image
                         id="border2"
